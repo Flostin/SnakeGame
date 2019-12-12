@@ -1,2 +1,22 @@
-﻿  Main.cpp
-  Snake.vcxproj -> C:\Users\McDonald\source\repos\Snake\x64\Debug\Snake.exe
+﻿  Snake.cpp
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(49,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(49,17): warning C4244:         with
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(49,17): warning C4244:         [
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(49,17): warning C4244:             T=float
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(49,17): warning C4244:         ]
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(55,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(55,17): warning C4244:         with
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(55,17): warning C4244:         [
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(55,17): warning C4244:             T=float
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(55,17): warning C4244:         ]
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(62,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(62,17): warning C4244:         with
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(62,17): warning C4244:         [
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(62,17): warning C4244:             T=float
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(62,17): warning C4244:         ]
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(68,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(68,17): warning C4244:         with
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(68,17): warning C4244:         [
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(68,17): warning C4244:             T=float
+C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(68,17): warning C4244:         ]
+  Snake.vcxproj -> C:\Users\westley.taylor\source\repos\SnakeGame-master\x64\Debug\Snake.exe

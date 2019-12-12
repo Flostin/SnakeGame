@@ -4,6 +4,8 @@ class Snake
 {
 private:
 	sf::Vector2f head;
+	sf::Vector2f direction;
+
 	std::vector<sf::Vector2f> segments;
 	int length;
 

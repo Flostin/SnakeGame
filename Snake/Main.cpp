@@ -9,6 +9,7 @@
 #include <vector>
 
 #include "Snake.h"
+#include "Apple.h"
 
 #define WIDTH 800
 #define HEIGHT 800
@@ -17,6 +18,9 @@ int main()
 {
 	sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "Snake Game!");
 	Snake snake;
+	Powerup* apple = new Apple("Apple.png", sf::Vector2f(10, 10));
+
+	window.setFramerateLimit(10);
 
 	bool gameOver = false;
 	while (window.isOpen())
@@ -34,8 +38,10 @@ int main()
 
 		window.clear();
 		snake.run(window);
+		apple->render(window);
 		window.display();
 	}
 
+	delete apple;
 	return 0;
 }

@@ -9,7 +9,10 @@ public:
 	sf::Texture texture;
 	sf::Sprite sprite;
 
-	Powerup(const char* filename);
-	//virtual
+	Powerup(const char* filename, sf::Vector2f& position);
+	virtual ~Powerup();
+
+	void virtual render(sf::RenderWindow& window);
+	void virtual onHit() = 0;
 };
 

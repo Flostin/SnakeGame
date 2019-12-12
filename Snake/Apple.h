@@ -3,6 +3,8 @@
 
 class Apple : public Powerup
 {
-	Apple(const char* filename);
+public:
+	Apple(const char* filename, sf::Vector2f position);
+	void onHit() override;
 };
 

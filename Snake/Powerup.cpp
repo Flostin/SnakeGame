@@ -3,8 +3,22 @@
 #include "Powerup.h"
 #include "Debug.h"
 
-Powerup::Powerup(const char* filename) : SIZE(25) {
-	this->texture = loadTexture(filename);
-	this->sprite = sf::Sprite(this->texture);
-	this->sprite.setScale(sf::Vector2f(this->texture.getSize()) / (float)SIZE);
+Powerup::Powerup(const char* filename, sf::Vector2f& position) : SIZE(25) {
+	texture = loadTexture(filename);
+	sprite = sf::Sprite(texture);
+
+	sf::Vector2f textureSize = sf::Vector2f(texture.getSize());
+	sprite.setScale(sf::Vector2f((float)SIZE / textureSize.x, (float)SIZE / textureSize.y));
+
+	sprite.setPosition(position);
+}
+
+Powerup::~Powerup()
+{
+	std::cout << "The instance has been destroyed!" << std::endl;
+}
+
+void Powerup::render(sf::RenderWindow& window)
+{
+	window.draw(sprite);
 }
