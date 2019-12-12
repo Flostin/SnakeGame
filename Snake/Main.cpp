@@ -1,24 +1,41 @@
+/*
+ * TODO:
+ * Add powerups (apple, bomb, and power star)
+ */
+
 #include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
+#include <iostream>
+#include <vector>
+
+#include "Snake.h"
+
+#define WIDTH 800
+#define HEIGHT 800
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+	sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "Snake Game!");
+	Snake snake;
 
-    while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
+	bool gameOver = false;
+	while (window.isOpen())
+	{
+		sf::Event event;
+		while (window.pollEvent(event))
+		{
+			switch (event.type)
+			{
+			case sf::Event::Closed:
+				window.close();
+				break;
+			}
+		}
 
-        window.clear();
-        window.draw(shape);
-        window.display();
-    }
+		window.clear();
+		snake.run(window);
+		window.display();
+	}
 
-    return 0;
+	return 0;
 }
