@@ -1,4 +1,8 @@
-﻿  Snake.cpp
+﻿  Apple.cpp
+  Debug.cpp
+  Main.cpp
+  Powerup.cpp
+  Snake.cpp
 C:\Users\McDonald\source\repos\Snake\Snake\Snake.cpp(61,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
           with
           [
@@ -19,4 +23,5 @@ C:\Users\McDonald\source\repos\Snake\Snake\Snake.cpp(80,17): warning C4244: '=':
           [
               T=float
           ]
+  Generating Code...
   Snake.vcxproj -> C:\Users\McDonald\source\repos\Snake\x64\Debug\Snake.exe
