@@ -1,22 +1,22 @@
 ﻿  Snake.cpp
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(49,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(49,17): warning C4244:         with
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(49,17): warning C4244:         [
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(49,17): warning C4244:             T=float
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(49,17): warning C4244:         ]
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(55,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(55,17): warning C4244:         with
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(55,17): warning C4244:         [
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(55,17): warning C4244:             T=float
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(55,17): warning C4244:         ]
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(62,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(62,17): warning C4244:         with
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(62,17): warning C4244:         [
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(62,17): warning C4244:             T=float
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(62,17): warning C4244:         ]
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(68,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(68,17): warning C4244:         with
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(68,17): warning C4244:         [
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(68,17): warning C4244:             T=float
-C:\Users\westley.taylor\source\repos\SnakeGame-master\Snake\Snake.cpp(68,17): warning C4244:         ]
-  Snake.vcxproj -> C:\Users\westley.taylor\source\repos\SnakeGame-master\x64\Debug\Snake.exe
+C:\Users\McDonald\source\repos\Snake\Snake\Snake.cpp(61,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\McDonald\source\repos\Snake\Snake\Snake.cpp(67,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\McDonald\source\repos\Snake\Snake\Snake.cpp(74,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\McDonald\source\repos\Snake\Snake\Snake.cpp(80,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Snake.vcxproj -> C:\Users\McDonald\source\repos\Snake\x64\Debug\Snake.exe

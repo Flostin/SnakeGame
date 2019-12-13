@@ -1,4 +1,5 @@
 #include <vector>
+#include <algorithm>
 #include <SFML/Graphics.hpp>
 
 #include "Snake.h"
@@ -6,8 +7,8 @@
 
 Snake::Snake() : length(3), head(200, 200), direction(0, 0), SEGMENT_SIZE(25)
 {
+	segments.reserve(length);
 	segments.push_back({ head.x, head.y });
-	segments.push_back({ 342.0f, 542.0f });
 }
 
 void Snake::run(sf::RenderWindow& window)
@@ -19,14 +20,25 @@ void Snake::run(sf::RenderWindow& window)
 
 void Snake::update()
 {
-	head += direction;
-
 	// Only updates the snake if it's moving
-	if (direction.x != 0.0f || direction.y != 0.0f)
-		segments.push_back({ head.x, head.y });
+	if (direction.x != 0.0f || direction.y != 0.0f) {
+		head += direction;
 
-	// Moves the snake forawrd by taking the end of the snake and swaping it with the head
-	std::cout << segments.size() << std::endl;
+		if (segments.size() < length)
+		{
+			segments.push_back({ head.x, head.y });
+		}
+		else
+		{
+			// Moves the snake forawrd by taking the end of the snake and putting it in the front
+			//sf::Vector2f temp = segments.at(0);
+			segments.erase(segments.begin());
+			segments.push_back({ head.x, head.y });
+			std::cout << "Capacity: " << segments.capacity() << std::endl;
+		}
+	}
+
+	//std::cout << segments.size() * sizeof(sf::Vector2f) << std::endl;
 }
 
 void Snake::render(sf::RenderWindow& window)
