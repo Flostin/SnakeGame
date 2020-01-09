@@ -8,40 +8,35 @@
 #include <iostream>
 #include <vector>
 
-#include "Snake.h"
-#include "Apple.h"
+#include "Main.h"
+#include "Game.h"
 
-#define WIDTH 800
-#define HEIGHT 800
+const int WIDTH = 800;
+const int HEIGHT = 800;
+sf::RenderWindow* window;
 
 int main()
 {
-	sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "Snake Game!");
-	Snake snake;
-	Powerup* apple = new Apple("Apple.png", sf::Vector2f(10, 10));
+	window = new sf::RenderWindow(sf::VideoMode(WIDTH, HEIGHT), "Snake Game!");
+	Game game;
 
-	window.setFramerateLimit(10);
-
-	bool gameOver = false;
-	while (window.isOpen())
+	while (window->isOpen()) 
 	{
 		sf::Event event;
-		while (window.pollEvent(event))
+		while (window->pollEvent(event))
 		{
 			switch (event.type)
 			{
 			case sf::Event::Closed:
-				window.close();
+				window->close();
 				break;
 			}
 		}
 
-		window.clear();
-		snake.run(window);
-		apple->render(window);
-		window.display();
+		game.update();
 	}
 
-	delete apple;
+	delete window;
+
 	return 0;
 }

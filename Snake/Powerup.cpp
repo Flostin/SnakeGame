@@ -1,7 +1,8 @@
 #include <SFML/Graphics.hpp>
 
-#include "Powerup.h"
 #include "Debug.h"
+#include "Snake.h"
+#include "Powerup.h"
 
 Powerup::Powerup(const char* filename, sf::Vector2f& position) : SIZE(25) {
 	texture = loadTexture(filename);
@@ -18,7 +19,7 @@ Powerup::~Powerup()
 	std::cout << "The instance has been destroyed!" << std::endl;
 }
 
-void Powerup::render(sf::RenderWindow& window)
+void Powerup::render(sf::RenderWindow* window)
 {
-	window.draw(sprite);
+	window->draw(sprite);
 }

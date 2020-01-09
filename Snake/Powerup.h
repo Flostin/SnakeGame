@@ -1,5 +1,7 @@
 #pragma once
 
+class Snake;
+
 class Powerup
 {
 public:
@@ -12,7 +14,7 @@ public:
 	Powerup(const char* filename, sf::Vector2f& position);
 	virtual ~Powerup();
 
-	void virtual render(sf::RenderWindow& window);
-	void virtual onHit() = 0;
+	void virtual render(sf::RenderWindow* window);
+	void virtual onHit(Snake& snake) = 0;
 };
 

@@ -1,5 +1,7 @@
 #pragma once
 
+class Apple;
+
 class Snake
 {
 private:
@@ -12,10 +14,15 @@ private:
 	const int SEGMENT_SIZE;
 public:
 	Snake();
-	void run(sf::RenderWindow& window);
+	void run(sf::RenderWindow* window);
+	void render(sf::RenderWindow* window);
 	void update();
-	void render(sf::RenderWindow& window);
 
 	void onInput();
-};
+	// Has the snake gone out of bounds
+	bool checkWalls();
+	bool checkApple(Apple& apple);
 
+	std::vector<sf::Vector2f>& getSegments();
+	void addLength(int amt);
+};
